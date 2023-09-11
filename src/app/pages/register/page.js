@@ -1,9 +1,20 @@
+'use client'
+
+import React from 'react';
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
 export default async function register() {
+
+  const submitEvent = (e) =>{
+    e.preventDefault();
+    toast.success('Usuário registrado com sucesso')
+  }
    return (
-       <div>
+       <>
            <h1>register</h1>
-           <>
-           <form action="">
+          
+           <form onSubmit={submitEvent}>
         <label htmlFor="">nome</label>
         <input type="text" />
 
@@ -12,8 +23,12 @@ export default async function register() {
 
         <label htmlFor="">Senha</label>
         <input type="password" name="pass" id="" />
+
+        <input type="submit" value="register" />
       </form>
-           </>
-       </div>
+      <ToastContainer/>
+         
+       </>
+       
    );
 };
