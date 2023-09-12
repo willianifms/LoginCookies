@@ -1,4 +1,5 @@
 import { getUsers } from "@/app/functions/handlerAcessAPI";
+import './dashboard.css'
 
 export default async function Dashboard() {
    const users = await getUsers();

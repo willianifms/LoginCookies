@@ -56,8 +56,8 @@ body {
   transition: .5s;
 }
 
-.login_box .input_box input:focus~label,
-.login_box .input_box input:valid~label {
+.login_box .input_box input:focus label,
+.login_box .input_box input:valid label {
   top: -20px;
   left: 0;
   color: #99007f;
@@ -69,6 +69,8 @@ body {
   display: inline-block;
   padding: 10px 20px;
   color: #99007f;
+  background-color: transparent;
+  border: 0;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;

@@ -26,30 +26,31 @@ export default function Login() {
     }
   }
   return (
-    <div class="login_box">
+    <div  >
+      <div class="login_box">
       <h1>Login</h1>
       <form onSubmit={handlerLogin}>
         <div className="input_box">
-        <input type="email"
-          onChange={(e) => { setUser({ ...user, email: e.target.value }) }}
-        />
+        <input type="email" onChange={(e) => { setUser({ ...user, email: e.target.value }) }}/>
         <label for="">E-mail</label>
         </div>
+
         <div className="input_box">
-        <input type='password'
-          onChange={(e) => { setUser({ ...user, password: e.target.value }) }}
-        />
+        <input type='password' onChange={(e) => { setUser({ ...user, password: e.target.value }) }}/>
         <label for="">Senha</label>
         </div>
-        <a className="enter">
+        
+        <button className="enter">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
           Entrar
-          </a>
+          </button>
       </form>
+      </div>
       <ToastContainer/>
+
     </div>
   )
 }
