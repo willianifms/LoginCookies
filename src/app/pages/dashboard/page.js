@@ -1,3 +1,4 @@
+'useserve'
 import { getUsers } from "@/app/functions/handlerAcessAPI";
 import Navbar from "../../components/Navbar";
 import './dashboard.css'
