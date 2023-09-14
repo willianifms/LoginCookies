@@ -27,7 +27,7 @@ export default function Login() {
   }
   return (
     <div  >
-      <div class="login_box">
+      <div className="login_box">
       <h1>Login</h1>
       <form onSubmit={handlerLogin}>
         <div className="input_box">
