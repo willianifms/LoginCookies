@@ -1,5 +1,5 @@
 import { getUsers } from "@/app/functions/handlerAcessAPI";
-import Navbar from "../../components/navbar";
+import Navbar from "../../components/Navbar";
 import './dashboard.css'
 
 export default async function Dashboard() {

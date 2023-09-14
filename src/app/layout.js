@@ -1,7 +1,7 @@
 import './global.css'
 
 export const metadata = {
-  title: 'Register users',
+  title: 'middleware',
   description: 'Project for class PTAC',
 }
 

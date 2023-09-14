@@ -1,13 +1,13 @@
-
 /* Centraliza o conteúdo principal */
 .main-content {
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 
 /* Estiliza a barra de navegação */
-.nav-bar {
-  background-color: #99007f; /* roxo */
+.navbar {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(153,0,127,1) 35%, rgba(0,212,255,1) 100%);
   padding: 10px 0;
 }
 
@@ -25,10 +25,21 @@
   text-decoration: none;
 }
 
-/* Estiliza o botão de sair com fundo preto e texto branco */
 .logout-button {
-  background-color: #000000; /* preto */
-  color: #ffffff; /* branco */
+  background: rgb(2,0,36);
+  background: transparent;
   border: none;
-  padding: 5px 10px;
+  border-radius: 15%;
+  color: white; /* Cor do texto do botão */
+  text-align: center;
+  display: inline-block;
+  font-size: 16px; /* Tamanho da fonte do botão */
+  padding: 2px 24px; /* Espaçamento interno do botão */
+  transition-duration: 0.4s; /* Duração da transição ao passar o mouse sobre o botão */
+  cursor: pointer; /* Muda o cursor para um ponteiro ao passar o mouse sobre o botão */
+}
+
+.logout-button:hover {
+color: black;
+cursor: pointer;
 }
