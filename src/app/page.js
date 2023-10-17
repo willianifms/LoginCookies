@@ -16,7 +16,8 @@ export default function Login() {
   const handlerLogin = async (e) => {
     e.preventDefault();
     try {
-  const userAuth =await handlerAcessUser(user);
+  const userAuth = await handlerAcessUser(user);
+  console.log(userAuth);
   if(userAuth.token === undefined){
     toast.error("erro no user ou na senha ");
   }
