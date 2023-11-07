@@ -2,14 +2,15 @@
 import { NextResponse } from "next/server";
 import { validateToken } from "./app/functions/validateToken";
 
-export const middleware = (request) => {
+export const middleware = async (request) => {
 
     const token = request.cookies.get('token')?.value;
     const urlLogin = new URL('/', request.url);
     const urlBlock = new URL('/pages/dashboard', request.url)
     const urlBlockRegister = new URL('/pages/register', request.url)
     const urlBlockAlter = new URL('/pages/alter', request.url)
-    const isTokenValidated = validateToken(token);
+    const urlBlockAlteraUser = new URL('/pages/alterauser', request.url)
+    const isTokenValidated = await validateToken(token);
 
     if (!isTokenValidated || !token) {
         if (request.nextUrl.pathname === '/pages/dashboard') {
@@ -44,11 +45,16 @@ export const middleware = (request) => {
             return NextResponse.redirect(urlBlockAlter);
         }
     }
+    if (isTokenValidated || token) {
+        if (request.nextUrl.pathname === '/') {
+            return NextResponse.redirect(urlBlockAlteraUser);
+        }
+    }
 
 
     NextResponse.next();
 };
 export const config = {
-    matcher: ['/', '/pages/dashboard', '/pages/register', '/pages/alter']
+    matcher: ['/', '/pages/dashboard', '/pages/register', '/pages/alter','/pages/alterauser']
 };
 
