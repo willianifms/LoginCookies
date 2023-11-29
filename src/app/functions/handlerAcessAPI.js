@@ -1,11 +1,11 @@
 'use server'
 
-const url = "https://aula-17-10.vercel.app";
+const url = "https://aula-17-10-henna.vercel.app";
 
 
 const getUsers = async (user) => {
 try{
-    const responseApi = await fetch(url +"/users",{
+    const responseApi = await fetch(url +"/users",{cache:"no-cache"},{
         next: {revalidate: 10}
     })
     listaUser = responseApi.json()

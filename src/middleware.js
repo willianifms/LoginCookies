@@ -45,11 +45,7 @@ export const middleware = async (request) => {
             return NextResponse.redirect(urlBlockAlter);
         }
     }
-    if (isTokenValidated || token) {
-        if (request.nextUrl.pathname === '/') {
-            return NextResponse.redirect(urlBlockAlteraUser);
-        }
-    }
+
 
 
     NextResponse.next();
