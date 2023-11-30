@@ -16,14 +16,13 @@ export default function Login() {
   const handlerLogin = async (e) => {
     e.preventDefault();
     try {
-  const userAuth = await handlerAcessUser(user);
-  console.log(userAuth);
-  if(userAuth.token === undefined){
-    toast.error("erro no user ou na senha ");
-  }
-  push('/pages/dashboard')
+      const userAuth = await handlerAcessUser(user);
+      if(userAuth.token === undefined){
+        toast.error("Erro no e-mail ou senha!")
+      }
+      push('/pages/dashboard');
     } catch {
-      toast.error("erro na aplicação")
+      toast.error("Erro na aplicação.")
     }
   }
   return (

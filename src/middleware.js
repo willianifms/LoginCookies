@@ -46,8 +46,6 @@ export const middleware = async (request) => {
         }
     }
 
-
-
     NextResponse.next();
 };
 export const config = {

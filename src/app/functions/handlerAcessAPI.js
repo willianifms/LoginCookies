@@ -1,6 +1,7 @@
 'use server'
 
-const url = "https://aula-17-10-henna.vercel.app";
+const url = "https://aula-17-10.vercel.app";
+// url da mari https://aula-17-10-henna.vercel.app/
 
 
 const getUsers = async (user) => {
@@ -20,7 +21,7 @@ const getUserAuthenticated = async (user) => {
     const responseApi = await fetch(url + "/user/authenticated",
         {
             method: "POST",
-            header: { "Content-Type": "application/json" },
+            header: { "Content-Type": "Application/json" },
             body: JSON.stringify(user)
         });
 
