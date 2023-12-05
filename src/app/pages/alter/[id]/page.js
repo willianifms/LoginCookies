@@ -1,6 +1,5 @@
 'use client'
-
-import React, {  useState } from 'react';
+import React, { useState } from 'react';
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from "../../../components/Navbar";
@@ -8,7 +7,7 @@ import '../login.css';
 import { updateUser } from '@/app/functions/handlerAcessAPI';
 import { useRouter } from 'next/navigation';
 
-export default async function alter({params}) {
+export default  function alter({params}) {
 
   const [user, setUser] = useState({
     name: '',
