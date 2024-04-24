@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Projeto LoginCookies
 
-## Getting Started
+## Descrição
 
-First, run the development server:
+O Projeto LoginCookies é uma aplicação web que permite aos usuários fazer login e gerenciar cookies de autenticação. Ele foi desenvolvido utilizando a biblioteca Next.js, que oferece uma experiência de desenvolvimento moderna e eficiente para aplicações React.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Recursos
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Autenticação de usuários: Os usuários podem criar contas, fazer login e gerenciar suas informações pessoais.
+- Gerenciamento de cookies: A aplicação permite aos usuários criar, editar e excluir cookies de autenticação utilizando o jwt.
+- Interface intuitiva: A interface do usuário foi projetada para ser fácil de usar e oferecer uma experiência agradável aos usuários.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Tecnologias 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Framework:
 
-## Learn More
+- Next.js: ([invalid URL removed]) - Um framework React utilizado para construir aplicações web renderizadas no servidor (SSR) e geração de sites estáticos (SSG).
+Linter e formatação:
 
-To learn more about Next.js, take a look at the following resources:
+### Bibliotecas JavaScript:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- React: (https://react.dev/) - Biblioteca JavaScript para construir interfaces de usuário (UI) declarativas e componentes reutilizáveis.
+- React Router DOM: (https://reacttraining.com/react-router) - Biblioteca para roteamento em aplicações React, permitindo a navegação entre diferentes páginas.
+- React Toastify: (https://github.com/fkhadra/react-toastify) - Biblioteca para criar notificações leves na tela do usuário.
+- Jose: (https://www.npmjs.com/package/jose) - Biblioteca para trabalhar com tokens JWT (JSON Web Token).
+- JS-Cookie: (https://www.npmjs.com/package/js-cookie) - Biblioteca para gerenciar cookies do navegador de forma simples.
+- JWT Decode: (https://www.npmjs.com/package/jwt-decode) - Biblioteca para decodificar tokens JWT.
+- jsonwebtoken: (https://www.npmjs.com/package/jsonwebtoken) - Biblioteca para gerar tokens JWT.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### CSS:
 
-## Deploy on Vercel
+- Tailwind CSS: (https://v1.tailwindcss.com/components) - Um framework CSS utility-first que fornece classes utilitárias para estilizar rapidamente componentes da web.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Acese Aki  
+- [LoginCookies](https://login-cookies.vercel.app/)
+### acesso :
+email:teste@teste
+senha:36
